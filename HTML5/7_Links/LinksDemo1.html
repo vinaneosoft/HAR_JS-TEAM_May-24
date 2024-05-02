@@ -13,7 +13,22 @@
     LinkDemo1====> google.com
     absolute path->  exact path, full path, domain/ root : always fix , 
                      all network paths are absolute paths
-    relative path
+    relative path -> relative to from where we r navigating : they always vary
 -->
+<a href="../3_Headings/headingdemo.html">Show Headings (relative path)</a>
+<!-- D:\Sessions\HAR_JS TEAM_May-24\HTML5\7_Links\LinksDemo1.html : source
+     D:\Sessions\HAR_JS TEAM_May-24\HTML5\3_Headings\headingdemo.html : destination
+
+     create navigation from this file to ULDemo of MyLists
+-->
+<a href="MyLists/ULDemo.html">UL DEMO</a>
+<a href="./MyLists/ULDemo.html" target="_blank">UL DEMO</a>
+<hr>
+<a href="MyLists/ULDemo.html" target="myframe">FRAME DEMO</a> <!-- the destinaion page gets opened in targated frame-->
+<iframe name="myframe" title="example of a and iframe" ></iframe>
+
+<a href="https://wallup.net/nature-landscape-lake-mountain-forest-wildflowers-spring-pine-trees-path-switzerland-hdr/">
+    <img src="../8_Html Images/Images/nature1.jpg" alt="nature image">
+</a>
 </body>
 </html>
