@@ -1,0 +1,6 @@
+Implement table with colspan and rowspan. Image given
+
+Find out regular expression for strong password and Implement pattern for password field 
+
+Arrange multiple clickable images in table row. if u click on that image then the page showing info of that image
+must get opened in iframe which is in same table 2nd row.
