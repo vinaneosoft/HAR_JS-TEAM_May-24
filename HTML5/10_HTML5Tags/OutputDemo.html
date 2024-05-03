@@ -18,7 +18,7 @@
 
     <form onsubmit="event.preventDefault(); result1.value=myname1.value.toUpperCase()">
         <label for="myname1">Enter your Name:</label>
-        <input type="text" id="myname1">
+        <input type="text" id="myname1" onkeyup="result1.value=myname1.value.toUpperCase()">
         <input type="submit">
         <div>
             <b>Name is upper case is :</b>
