@@ -16,12 +16,23 @@
         </div>
     </form>
 
+    <form onsubmit="event.preventDefault(); result1.value=myname1.value.toUpperCase()">
+        <label for="myname1">Enter your Name:</label>
+        <input type="text" id="myname1">
+        <input type="submit">
+        <div>
+            <b>Name is upper case is :</b>
+            <output id="result1"></output>
+        </div>
+    </form>
+
     <script>
         function convert(ev){
             ev.preventDefault();
             const myname=document.getElementById("myname").value;
             const upper=myname.toUpperCase();
-            document.getElementById("result").innerHTML=upper;
+            document.getElementById("result").textContent=upper;
+            console.log(upper);
         }
     </script>
 </body>
