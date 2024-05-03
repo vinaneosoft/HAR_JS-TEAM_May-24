@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Demo</title>
+</head>
+<body>
+    <audio src="../Resources/rainaudio.wav" autoplay loop muted controls></audio>
+    <!-- src : attribute
+    assume : wav : not supported / not found / file deleted 
+    we need mutiple paths of same resource-->
+    <audio controls>
+        <source src="../Resources/rainaudio.mp3" type="audio/mp3">
+        <source src="../Resources/rainaudio2.wav" type="audio/wav">
+        <source src="../Resources/rainaudio.wav" type="audio/wav">
+        <source src="../Resources/rainaudio.wav">
+        <source src="../Resources/rainaudio.wav">
+    </audio>
+</body>
+</html>
