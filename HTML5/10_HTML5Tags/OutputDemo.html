@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutputDemo</title>
+</head>
+<body>
+    <form onsubmit="convert(event)">
+        <label for="myname">Enter your Name:</label>
+        <input type="text" id="myname">
+        <input type="submit">
+        <div>
+            <b>Name is upper case is :</b>
+            <span id="result"></span>
+        </div>
+    </form>
+
+    <script>
+        function convert(ev){
+            ev.preventDefault();
+            const myname=document.getElementById("myname").value;
+            const upper=myname.toUpperCase();
+            document.getElementById("result").innerHTML=upper;
+        }
+    </script>
+</body>
+</html>
