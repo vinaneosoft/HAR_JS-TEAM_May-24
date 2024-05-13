@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Demo</title>
+    <style>
+        meter{
+            width: 800px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+  <label>Fuel Indicator:</label> <meter id="fuel" min="0"  max="100"></meter><br>
+  <label>Fuel Indicator:</label> <meter id="fuel2" min="0"  low="20" high="80" max="100"></meter><br>
+  <label>Fuel Indicator:</label> <meter id="fuel3" min="0"  low="20" high="80" optimum="82" max="100"></meter><br>
+  <script>
+    const fuelNode=document.getElementById("fuel3"); 
+    fuelNode.value=0;
+
+    const interval=setInterval( ()=>{
+        fuelNode.value++
+        console.log("*");
+        if(fuelNode.value>=100)
+        clearInterval(interval);
+    },
+    200);
+    
+  </script>
+</body>
+</html>
